@@ -1,0 +1,15 @@
+# ===================================
+#  Import/Export Behavior Config
+# ===================================
+
+import:
+    title: Import Users
+    modelClass: VojtaSvoboda\UserImportExport\Models\UserImportModel
+    list: $/vojtasvoboda/userimportexport/models/userimport/columns.yaml
+    redirect: rainlab/user/users
+
+export:
+    title: Export Users
+    modelClass: VojtaSvoboda\UserImportExport\Models\UserExportModel
+    list: $/vojtasvoboda/userimportexport/models/userexport/columns.yaml
+    redirect: rainlab/user/users
