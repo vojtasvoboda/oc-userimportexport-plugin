@@ -21,3 +21,17 @@ columns:
     email:
         label: rainlab.user::lang.user.email
         searchable: true
+
+    # state:
+    #     label: State
+    #     searchable: true
+
+    # street_addr:
+    #     label: Street
+    #     searchable: true
+
+    # city:
+    #     label: City
+
+    # zip:
+    #     label: ZIP
