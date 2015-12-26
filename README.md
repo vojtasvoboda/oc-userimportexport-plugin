@@ -42,3 +42,11 @@ Can't import CSV file -> try to save file in CP1250 charset (for example in Subl
 - add checkbox for user activation
 
 **Feel free to send pullrequest!**
+
+## License
+
+User import export plugin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT) same as OctoberCMS platform.
+
+## Contributing
+
+Please send Pull Request to master branch.
