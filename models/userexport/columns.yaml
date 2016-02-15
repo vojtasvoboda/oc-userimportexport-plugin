@@ -5,7 +5,7 @@
 columns:
 
     id:
-        label: rainlab.user::lang.user.id
+        label: Id
         invisible: true
 
     username:
