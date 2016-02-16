@@ -21,6 +21,12 @@ Allow import or export Users managed by [RainLab.User](http://octobercms.com/plu
 
 Just create `users` folder and insert images with name matching username. E.g. image 12905.jpg for user with username 12905, or image vojta.jpg for user with username vojta.
 
+## Import on Mac
+
+1. Create Excel sheet
+2. Save As Windows Comma Separated (it will create CSV with semicolons)
+3. Open CSV in Sublime Text and replace all semicolons by commas
+
 ## License
 
 User import export plugin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT) same as OctoberCMS platform.
