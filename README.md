@@ -27,15 +27,7 @@ Just create `users` folder and insert images with name matching username. E.g. i
 2. Save As Windows Comma Separated (it will create CSV with semicolons)
 3. Open CSV in Sublime Text and replace all semicolons by commas
 
-## License
-
-User import export plugin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT) same as OctoberCMS platform.
-
-## Contributing
-
-Please send Pull Request to master branch.
-
-## Troubleshoting
+## Troubleshooting
 
 Can't import CSV file -> try to save file in CP1250 charset (for example in Sublime Text 2).
 
