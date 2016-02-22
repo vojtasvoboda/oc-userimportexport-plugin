@@ -20,21 +20,17 @@ class UserImportModel extends ImportModel
         {
             $data += [
                 'is_activated' => true,
-
-                /* prepare for future usage */
-                // 'state_id' => $this->getStateId($data['state']),
-                // 'country_id' => 14
             ];
 
-            if ( empty($data['username']) ) {
+            if (empty($data['username'])) {
                 $data['username'] = $data['email'];
             }
 
-            if ( empty($data['password']) ) {
+            if (empty($data['password'])) {
                 $data['password'] = $data['username'];
             }
 
-            if ( empty($data['password_confirmation']) ) {
+            if (empty($data['password_confirmation'])) {
                 $data['password_confirmation'] = $data['password'];
             }
 
@@ -44,7 +40,7 @@ class UserImportModel extends ImportModel
 
                 // try to find avatar
                 $avatar = $this->findAvatar($data['username']);
-                if ( $avatar ) {
+                if ($avatar) {
                     $user->avatar = $avatar;
                 }
 
@@ -72,9 +68,9 @@ class UserImportModel extends ImportModel
         $library = MediaLibrary::instance();
         $files = $library->listFolderContents($this->imageStoragePath, 'title', 'image');
 
-        foreach($files as $file) {
+        foreach ($files as $file) {
             $pathinfo = pathinfo($file->publicUrl);
-            if ( $pathinfo['filename'] == $username ) {
+            if ($pathinfo['filename'] == $username) {
                 $file = new File();
                 $file->is_public = $this->imagePublic;
                 $file->fromFile(base_path() . $pathinfo['dirname'] . '/' . $pathinfo['basename']);
@@ -83,22 +79,4 @@ class UserImportModel extends ImportModel
             }
         }
     }
-
-    /**
-     * Get state by ident
-     *
-     * @param $stateIdent
-     *
-     * @return null
-     */
-    /*
-    private function getStateId($stateIdent)
-    {
-        $state = State::where('code', $stateIdent)->first();
-        if ( !$state ) return null;
-
-        return $state->id;
-    }
-    */
-
 }
