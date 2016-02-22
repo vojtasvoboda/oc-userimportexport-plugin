@@ -12,7 +12,7 @@ class UserImportModel extends ImportModel
 
     public $imageStoragePath = '/users';
 
-    public $imageVisibilityPublic = true;
+    public $imagePublic = true;
 
     public function importData($results, $sessionKey = null)
     {
@@ -76,7 +76,7 @@ class UserImportModel extends ImportModel
             $pathinfo = pathinfo($file->publicUrl);
             if ( $pathinfo['filename'] == $username ) {
                 $file = new File();
-                $file->is_public = $this->imageVisibilityPublic;
+                $file->is_public = $this->imagePublic;
                 $file->fromFile(base_path() . $pathinfo['dirname'] . '/' . $pathinfo['basename']);
 
                 return $file;
@@ -91,6 +91,7 @@ class UserImportModel extends ImportModel
      *
      * @return null
      */
+    /*
     private function getStateId($stateIdent)
     {
         $state = State::where('code', $stateIdent)->first();
@@ -98,5 +99,6 @@ class UserImportModel extends ImportModel
 
         return $state->id;
     }
+    */
 
 }
