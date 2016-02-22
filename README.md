@@ -1,5 +1,9 @@
 # User Import/Export plugin for OctoberCMS
 
+[![Codacy](https://img.shields.io/codacy/9f8e598b493241b0be12f6dcc5bf3efc.svg)](https://www.codacy.com/app/vojtasvoboda/oc-userimportexport-plugin)
+[![Scrutinizer Coverage](https://img.shields.io/scrutinizer/g/vojtasvoboda/oc-userimportexport-plugin.svg)](https://scrutinizer-ci.com/g/vojtasvoboda/oc-userimportexport-plugin/?branch=master)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vojtasvoboda/oc-userimportexport-plugin/blob/master/LICENSE.md)
+
 Allow import or export Users managed by [RainLab.User](http://octobercms.com/plugin/rainlab-user) plugin.
 
 - create hundreds of accounts in a few clicks
@@ -41,10 +45,10 @@ Can't import CSV file -> try to save file in CP1250 charset (for example in Subl
 
 **Feel free to send pullrequest!**
 
-## License
-
-User import export plugin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT) same as OctoberCMS platform.
-
 ## Contributing
 
 Please send Pull Request to master branch.
+
+## License
+
+User import export plugin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT) same as OctoberCMS platform.
