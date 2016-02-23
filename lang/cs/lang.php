@@ -6,9 +6,9 @@ return [
         'description' => 'Umožní import nebo export uživatelů'
     ],
     'permissions' => [
-    	'tab' => 'Import/export uživatelů',
-    	'all' => [
-    		'label' => 'Import a export uživatelů'
-    	]
+        'tab' => 'Import/export uživatelů',
+        'all' => [
+            'label' => 'Import a export uživatelů'
+        ]
     ]
 ];
