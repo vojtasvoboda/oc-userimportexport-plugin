@@ -1,0 +1,17 @@
+{
+    "name": "vojtasvoboda/oc-userimportexport-plugin",
+    "type": "october-plugin",
+    "description": "User import/export plugin for OctoberCMS",
+    "homepage": "https://github.com/vojtasvoboda/oc-userimportexport-plugin",
+    "keywords": ["october", "plugin", "user", "import", "export"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vojta Svoboda",
+            "email": "vojtasvoboda.cz@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    }
+}
