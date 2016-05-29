@@ -12,6 +12,10 @@ use RainLab\User\Controllers\Users;
  */
 class Plugin extends PluginBase
 {
+    public $require = [
+    	'RainLab.User',
+    ];
+
     /**
      * Returns information about this plugin.
      *
