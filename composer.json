@@ -12,6 +12,7 @@
         }
     ],
     "require": {
-        "php": ">=5.5.9"
+        "php": ">=5.5.9",
+        "composer/installers": "~1.0"
     }
 }

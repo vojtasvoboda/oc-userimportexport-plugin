@@ -10,6 +10,12 @@ Allow import or export Users managed by [RainLab.User](http://octobercms.com/plu
 - CSV columns auto matching, rest columns can be matched drag and drop
 - import avatars from Media folder (see Import avatars section below)
 
+Tested with the last stable OctoberCMS build 349.
+
+## Dependencies
+
+- [RainLab.User](http://octobercms.com/plugin/rainlab-user) plugin
+
 ## Installation
 
 1. Install plugin [VojtaSvoboda.UserImportExport](http://octobercms.com/plugin/vojtasvoboda-userimportexport)
@@ -33,15 +39,15 @@ Just create `users` folder and insert images with name matching username. E.g. i
 
 ## Troubleshooting
 
-Can't import CSV file -> try to save file in CP1250 charset (for example in Sublime Text 2).
+Can't import CSV file? Try to save file in CP1250 charset (for example in Sublime Text 2).
 
 ## Planned features
 
-- set avatar directory at import page
-- compatibility with RainLab.Location plugin
-- add Update checkbox, for updating records (see RainLab.Blog)
-- add checkbox for avatar image visibility
-- add checkbox for user activation
+- [ ] set avatar directory at import page
+- [ ] compatibility with RainLab.Location plugin (automagically extend YAML fields)
+- [ ] add Update checkbox, for updating existing records (see RainLab.Blog)
+- [ ] add checkbox for avatar image visibility (public/protected)
+- [ ] add checkbox for enable user activation
 
 **Feel free to send pullrequest!**
 
