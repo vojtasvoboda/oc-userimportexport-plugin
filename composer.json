@@ -1,6 +1,9 @@
 {
     "name": "vojtasvoboda/oc-userimportexport-plugin",
     "type": "october-plugin",
+    "extra": {
+        "installer-name": "userimportexport"
+    },
     "description": "User import/export plugin for OctoberCMS",
     "homepage": "https://github.com/vojtasvoboda/oc-userimportexport-plugin",
     "keywords": ["october", "plugin", "user", "import", "export"],
