@@ -1,5 +1,7 @@
 # User Import/Export plugin for OctoberCMS
 
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9f8e598b493241b0be12f6dcc5bf3efc)](https://www.codacy.com/app/vojtasvoboda/oc-userimportexport-plugin?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=vojtasvoboda/oc-userimportexport-plugin&amp;utm_campaign=badger)
 [![Codacy](https://img.shields.io/codacy/9f8e598b493241b0be12f6dcc5bf3efc.svg)](https://www.codacy.com/app/vojtasvoboda/oc-userimportexport-plugin)
 [![Scrutinizer Coverage](https://img.shields.io/scrutinizer/g/vojtasvoboda/oc-userimportexport-plugin.svg)](https://scrutinizer-ci.com/g/vojtasvoboda/oc-userimportexport-plugin/?branch=master)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vojtasvoboda/oc-userimportexport-plugin/blob/master/LICENSE.md)
