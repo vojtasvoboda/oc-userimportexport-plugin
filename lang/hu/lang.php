@@ -7,7 +7,12 @@ return [
     ],
     'label' => [
         'import' => 'Importálás',
-        'export' => 'Exportálás',
-        'permission' => 'Importálás és exportálás'
+        'export' => 'Exportálás'
+    ],
+    'permissions' => [
+        'tab' => 'Felhasználók',
+        'all' => [
+            'label' => 'Importálás és exportálás'
+        ]
     ]
 ];
