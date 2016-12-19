@@ -2,8 +2,8 @@
 
 return [
     'plugin' => [
-        'name' => 'Felhasználók importálása/exportálása',
-        'description' => 'Provide import and export users'
+        'name' => 'Felhasználók kezelése',
+        'description' => 'Importálási és exportálási lehetőség.'
     ],
     'label' => [
         'import' => 'Importálás',
