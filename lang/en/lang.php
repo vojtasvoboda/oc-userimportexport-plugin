@@ -5,10 +5,9 @@ return [
         'name' => 'User import/export',
         'description' => 'Provide import and export users'
     ],
-    'permissions' => [
-        'tab' => 'User import/export',
-        'all' => [
-            'label' => 'User import and export'
-        ]
+    'label' => [
+        'import' => 'Import',
+        'export' => 'Export',
+        'permission' => 'User import and export'
     ]
 ];
