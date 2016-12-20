@@ -12,7 +12,9 @@ use RainLab\User\Controllers\Users;
  */
 class Plugin extends PluginBase
 {
-    public $require = ['RainLab.User'];
+    public $require = [
+        'RainLab.User',
+    ];
 
     /**
      * Returns information about this plugin.
@@ -26,7 +28,7 @@ class Plugin extends PluginBase
             'description' => 'vojtasvoboda.userimportexport::lang.plugin.description',
             'author'      => 'Vojta Svoboda',
             'icon'        => 'icon-sign-in',
-            'homepage'    => 'https://github.com/vojtasvoboda/oc-userimportexport-plugin'
+            'homepage'    => 'https://github.com/vojtasvoboda/oc-userimportexport-plugin',
         ];
     }
 
@@ -35,8 +37,8 @@ class Plugin extends PluginBase
         return [
             'vojtasvoboda.userimportexport.*' => [
                 'tab'   => 'vojtasvoboda.userimportexport::lang.permissions.tab',
-                'label' => 'vojtasvoboda.userimportexport::lang.label.permission'
-            ]
+                'label' => 'vojtasvoboda.userimportexport::lang.label.permission',
+            ],
         ];
     }
 
@@ -65,7 +67,7 @@ class Plugin extends PluginBase
                     'icon'        => 'icon-sign-out',
                     'permissions' => ['vojtasvoboda.userimportexport.export'],
                     'order'       => 300,
-                ]
+                ],
             ]);
         });
     }

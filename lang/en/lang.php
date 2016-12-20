@@ -7,12 +7,12 @@ return [
     ],
     'label' => [
         'import' => 'Import',
-        'export' => 'Export'
+        'export' => 'Export',
     ],
     'permissions' => [
         'tab' => 'User import/export',
         'all' => [
-            'label' => 'User import and export'
-        ]
-    ]
+            'label' => 'User import and export',
+        ],
+    ],
 ];
