@@ -1,3 +1,4 @@
 1.0.1: First version of User Import Export
 1.0.2: Rename ID column because of Microsoft SYLK error
 1.0.3: Add composer.json
+1.0.4: Disable sending welcome emails to imported users
