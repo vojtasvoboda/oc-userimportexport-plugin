@@ -44,7 +44,7 @@ Can't import CSV file? Try to save file in CP1250 charset (for example in Sublim
 ## Planned features
 
 - [ ] set avatar directory at import page
-- [ ] compatibility with RainLab.Location plugin (automagically extend YAML fields)
+- [ ] compatibility with RainLab.Location plugin (automagically extend YAML fields with state and country)
 - [ ] add Update checkbox, for updating existing records (see RainLab.Blog)
 - [ ] add checkbox for avatar image visibility (public/protected)
 - [ ] add checkbox for enable user activation
