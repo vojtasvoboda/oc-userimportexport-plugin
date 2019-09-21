@@ -1,7 +1,7 @@
 <?php namespace VojtaSvoboda\UserImportExport\Models;
 
 use Backend\Models\ImportModel;
-use Cms\Classes\MediaLibrary;
+use System\Classes\MediaLibrary;
 use System\Models\File;
 use RainLab\Location\Models\State;
 use RainLab\User\Models\User;
@@ -16,8 +16,7 @@ class UserImportModel extends ImportModel
 
     public function importData($results, $sessionKey = null)
     {
-        foreach ($results as $row => $data)
-        {
+        foreach ($results as $row => $data) {
             $data += [
                 'is_activated' => true,
             ];
@@ -59,8 +58,7 @@ class UserImportModel extends ImportModel
     }
 
     /**
-     * @param $username
-     *
+     * @param string $username
      * @return string|null
      */
     private function findAvatar($username)
@@ -71,11 +69,11 @@ class UserImportModel extends ImportModel
         foreach ($files as $file) {
             $pathinfo = pathinfo($file->publicUrl);
             if ($pathinfo['filename'] == $username) {
-                $file = new File();
-                $file->is_public = $this->imagePublic;
-                $file->fromFile(base_path() . $pathinfo['dirname'] . '/' . $pathinfo['basename']);
+                $newFile = new File();
+                $newFile->is_public = $this->imagePublic;
+                $newFile->fromFile(storage_path('app/media' . $file->path));
 
-                return $file;
+                return $newFile;
             }
         }
     }
