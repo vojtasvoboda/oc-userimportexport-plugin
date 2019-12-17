@@ -42,6 +42,19 @@ class Plugin extends PluginBase
         ];
     }
 
+    public function registerSettings()
+    {
+        return [
+            'config' => [
+                'label' => 'User Import/Export',
+                'icon' => 'oc-icon-user',
+                'description' => '',
+                'class' => \VojtaSvoboda\UserImportExport\Models\Settings::class,
+                'order' => 600,
+            ],
+        ];
+    }
+
     public function boot()
     {
         Event::listen('backend.menu.extendItems', function($manager)

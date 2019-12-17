@@ -1,0 +1,7 @@
+tabs:
+  fields:
+    controller_config_override:
+      label: Custom Config
+      span: full
+      type: text
+      commentAbove: "Replace the default Import/Export Config spec with your own."
