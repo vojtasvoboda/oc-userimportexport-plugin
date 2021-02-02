@@ -47,7 +47,7 @@ Can't import CSV file? Try to save file in CP1250 charset (for example in Sublim
 - [ ] compatibility with RainLab.Location plugin (automagically extend YAML fields with state and country)
 - [ ] add Update checkbox, for updating existing records (see RainLab.Blog)
 - [ ] add checkbox for avatar image visibility (public/protected)
-- [ ] add checkbox for enable user activation
+- [ ] add checkbox for [enable user activation](https://github.com/vojtasvoboda/oc-userimportexport-plugin/blob/master/models/UserImportModel.php#L50)
 
 **Feel free to send pullrequest!**
 
