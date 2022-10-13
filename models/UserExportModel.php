@@ -9,7 +9,7 @@ class UserExportModel extends ExportModel
     {
         $users = User::all();
         $users->each(function($user) use ($columns) {
-            $user->addVisible($columns);
+            $user->makeVisible($columns);
         });
 
         return $users->toArray();
